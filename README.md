@@ -51,16 +51,13 @@ driver.switchTo().alert().accept(); //Accept = ok done yes<br>
 <p><strong>Fluent</strong> // type of explicit wait with maximum amount of time to wait condition but also frequency to check the condition<br><br> // Waiting 30 seconds for an element to be present on the page, checking<br> // for its presence once every 5 seconds.<br> Wait&lt;WebDriver&gt; wait = new FluentWait&lt;WebDriver&gt;(driver)<br> .withTimeout(30, SECONDS)<br> .pollingEvery(5, SECONDS)<br> .ignoring(NoSuchElementException.class);</p>
 <p>WebElement foo = wait.until(new Function&lt;WebDriver, WebElement&gt;() {<br> public WebElement apply(WebDriver driver) {<br> return driver.findElement(By.id("foo"));<br> }<br> });</p>
 <p><strong>Sleep Thread</strong><br><br>Thread.sleep(5000);&nbsp;</p>
-<h2>Misc.</h2>
-<h3>Retrieve attribute values (Button text)</h3><ul>
+<h2>Misc.</h2><strong>Retrieve attribute values (Button text)</strong><ul>
 
 </ul>
-<p>driver.findElement(By.XPath("//input[@name='submit']")).getAttribute("value");</p>
-<h3>Control + Click (Click on element opens new tab)</h3><ul>
+<p>driver.findElement(By.XPath("//input[@name='submit']")).getAttribute("value");</p><strong>Control + Click (Click on element opens new tab)</strong><ul>
 
 </ul>
-<p>Actions action = new Actions(driver);<br>action.keyDown(Keys.CONTROL).build().perform();<br>driver.findElement(By.className("#")).click();<br>action.keyUp(Keys.CONTROL).build().perform();</p>
-<h3>Kill chromedriver.exe instances in Task Manager with batch file</h3><ul>
+<p>Actions action = new Actions(driver);<br>action.keyDown(Keys.CONTROL).build().perform();<br>driver.findElement(By.className("#")).click();<br>action.keyUp(Keys.CONTROL).build().perform();</p><strong>Kill chromedriver.exe instances in Task Manager with batch file</strong><ul>
 
 </ul>
 <p>Create a .bat file with input "taskkill /F /IM ChromeDriver.exe" and open when you want to close multiple chromedriver instances</p>
