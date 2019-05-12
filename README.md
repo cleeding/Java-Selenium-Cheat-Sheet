@@ -1,7 +1,8 @@
 <h1>Java Selenium Cheat Sheet</h1>
 <h2>Drivers</h2>
-<p><strong>Chrome:</strong><br>System.setProperty(webdriver.chrome.driver, Chromedriver filepath);</p>
-<p><strong>Firefox:</strong><br>System.setProperty(webdriver.gecko.driver, Geckodriver filepath);<br><br><strong>Internet Explorer:</strong><br>System.setProperty(webdriver.ie.driver, IE filepath);</p>
+<p><strong>Chrome:</strong><br>System.setProperty("webdriver.chrome.driver", "Chromedriver filepath");</p>
+<p><strong>Firefox:</strong><br>System.setProperty("webdriver.gecko.driver", "Geckodriver filepath");</p>
+<p><strong>Internet Explorer:</strong><br>System.setProperty("webdriver.ie.driver", "IE filepath");</p>
 <p>//Class object reference to the Webdriver Interface<br>WebDriver driver = new ChromeDriver();</p>
 <h2>Basic Methods</h2>
 <ul>
